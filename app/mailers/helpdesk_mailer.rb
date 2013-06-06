@@ -1,5 +1,5 @@
 class HelpdeskMailer < ActionMailer::Base
-  default from: "helpdesk@example.com"
+  default from: "6557e9ae5017e70366a6@cloudmailin.net"
 
   def ticket_created(ticket)
     @ticket = ticket
