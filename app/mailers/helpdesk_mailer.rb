@@ -4,6 +4,6 @@ class HelpdeskMailer < ActionMailer::Base
   def ticket_created(ticket)
     @ticket = ticket
 
-    mail to: ticket.email, subject: "Ticket Created!"
+    mail to: ticket.email, subject: "Ticket #{ticket.id} Created!"
   end
 end

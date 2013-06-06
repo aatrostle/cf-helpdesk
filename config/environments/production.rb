@@ -63,7 +63,7 @@ Helpdesk::Application.configure do
   }
 
   # Specify what domain to use for mailer URL's
-  config.action_mailer.default_url_options ={ host: "cf-helpdesk.herokuapp.com/" }
+  config.action_mailer.default_url_options ={ host: "cf-helpdesk.herokuapp.com" }
 
   # Enable threaded mode
   # config.threadsafe!
