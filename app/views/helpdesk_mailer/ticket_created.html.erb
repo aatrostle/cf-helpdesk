@@ -1,0 +1,7 @@
+<p><%= @ticket.name %>,</p>
+
+<p>Thanks for creating a ticket! Here is the contents of the ticket you created.</p>
+
+<p><%= @ticket.description %></p>
+
+<p>Reply to this email to update your ticket. Or you can visit the ticket in your browser to update it by <%= link_to "clicking here", ticket_url(@ticket) %>.</p>

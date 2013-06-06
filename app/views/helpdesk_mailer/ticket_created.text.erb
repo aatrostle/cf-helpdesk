@@ -1,3 +1,7 @@
-HelpdeskMailer#ticket_created
+<%= @ticket.name %>,
 
-<%= @greeting %>, find me in app/views/app/views/helpdesk_mailer/ticket_created.text.erb
+Thanks for creating a ticket! Here is the contents of the ticket you created.
+
+<%= @ticket.description %>
+
+Reply to this email to update your ticket. Or view your ticket in your browser here <%= ticket_url(@ticket) %>

@@ -1,14 +1,9 @@
 class HelpdeskMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "helpdesk@example.com"
 
-  # Subject can be set in your I18n file at config/locales/en.yml
-  # with the following lookup:
-  #
-  #   en.helpdesk_mailer.ticket_created.subject
-  #
-  def ticket_created
-    @greeting = "Hi"
+  def ticket_created(ticket)
+    @ticket = ticket
 
-    mail to: "to@example.org"
+    mail to: ticket.email, subject: "Ticket Created!"
   end
 end
