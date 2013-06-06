@@ -31,7 +31,7 @@ class RepliesController < ApplicationController
 
 private
   def get_ticket_id(param)
-    param.scan(/\d/)[0]
+    param.match(/<(\d*)>/)[1]
   end
 
   def find_reply
