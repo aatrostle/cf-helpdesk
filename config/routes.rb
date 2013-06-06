@@ -1,5 +1,6 @@
 Helpdesk::Application.routes.draw do
   resources :tickets
+  resources :replies, except: [:index, :new, :show]
 
   root :to => "tickets#index"
   # The priority is based upon order of creation:
